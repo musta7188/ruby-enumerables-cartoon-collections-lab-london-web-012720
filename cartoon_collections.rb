@@ -20,9 +20,10 @@ calls.any? { |calls| calls.size > 4  }
 end
 
 def find_the_cheese(array)
-  cheeses_type = %w[gouda cheddar camembert]
+cheese_types = ["cheddar", "gouda", "camembert"]
 
-  array.find do |string_in_array|
-    cheeses_type.include?(string_in_array)
-  end
+array.find(cheese_types) do |string_in_array|
+
+  cheese_types.include?(string_in_array)
+end
 end
