@@ -22,20 +22,8 @@ end
 def find_the_cheese array
 cheese_types = ["cheddar", "gouda", "camembert"]
 
-
-#find = array.include?(cheese_types[0])
-
-i = 0
-while i < array.length do
-  i2 = 0
-  while i2 < array[i].length do
-    if array[i] == cheese_types[i2]
-      return array[i]
-    end
-    i2 += 1
-  end
-  i += 1
+array.find(cheese_types) do |string_in_array|
+  cheese_types.include?(string_in_array)
 end
-
 
 end
