@@ -22,7 +22,7 @@ end
 def find_the_cheese array
 cheese_types = ["cheddar", "gouda", "camembert"]
 
-array.find(cheese_types) do |string_in_array|
+array.find (cheese_types) do |string_in_array|
   cheese_types.include?(string_in_array)
 end
 end
