@@ -19,10 +19,10 @@ calls.any? { |calls| calls.size > 4  }
 
 end
 
-def find_the_cheese(potentially_cheesy_items)
-  cheeses = %w[gouda cheddar camembert]
+def find_the_cheese(array)
+  cheeses_type = %w[gouda cheddar camembert]
 
-  potentially_cheesy_items.find do |maybe_cheese|
-    cheeses.include?(maybe_cheese)
+  array.find do |string_in_array|
+    cheeses_type.include?(string_in_array)
   end
 end
